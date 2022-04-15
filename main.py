@@ -88,23 +88,23 @@ def button_divid():
 
 
 
-button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
-button_2 = Button(root, text="2", padx=44, pady=20, command=lambda: button_click(2))
-button_3 = Button(root, text="3", padx=40, pady=20, command=lambda: button_click(3))
-button_4 = Button(root, text="4", padx=40, pady=20, command=lambda: button_click(4))
-button_5 = Button(root, text="5", padx=44, pady=20, command=lambda: button_click(5))
-button_6 = Button(root, text="6", padx=40, pady=20, command=lambda: button_click(6))
-button_7 = Button(root, text="7", padx=40, pady=20, command=lambda: button_click(7))
-button_8 = Button(root, text="8", padx=44, pady=20, command=lambda: button_click(8))
-button_9 = Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9))
-button_0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click(0))
-button_plus = Button(root, text="+", padx=39, pady=20, command=button_add)
-button_minus = Button(root, text="-", padx=41, pady=20, command=button_sub)
-button_mul = Button(root, text="*", padx=40, pady=20, command=button_mult)
-button_div = Button(root, text="/", padx=45, pady=20, command=button_divid)
+button_1 = Button(root, text="1", padx=40, pady=20, borderwidth=5 ,command=lambda: button_click(1))
+button_2 = Button(root, text="2", padx=44, pady=20,borderwidth=5, command=lambda: button_click(2))
+button_3 = Button(root, text="3", padx=40, pady=20,borderwidth=5, command=lambda: button_click(3))
+button_4 = Button(root, text="4", padx=40, pady=20,borderwidth=5, command=lambda: button_click(4))
+button_5 = Button(root, text="5", padx=44, pady=20,borderwidth=5, command=lambda: button_click(5))
+button_6 = Button(root, text="6", padx=40, pady=20,borderwidth=5, command=lambda: button_click(6))
+button_7 = Button(root, text="7", padx=40, pady=20,borderwidth=5, command=lambda: button_click(7))
+button_8 = Button(root, text="8", padx=44, pady=20,borderwidth=5, command=lambda: button_click(8))
+button_9 = Button(root, text="9", padx=40, pady=20,borderwidth=5, command=lambda: button_click(9))
+button_0 = Button(root, text="0", padx=40, pady=20,borderwidth=5, command=lambda: button_click(0))
+button_plus = Button(root, text="+", padx=39, pady=20,borderwidth=5, command=button_add)
+button_minus = Button(root, text="-", padx=41, pady=20,borderwidth=5, command=button_sub)
+button_mul = Button(root, text="*", padx=40, pady=20,borderwidth=5, command=button_mult)
+button_div = Button(root, text="/", padx=45, pady=20,borderwidth=5, command=button_divid)
 
-button_equal = Button(root, text="=", padx=91, pady=20, command=button_eq)
-button_clear = Button(root, text="Clear", padx=82, pady=20, command=button_cl)
+button_equal = Button(root, text="=", padx=91, pady=20,borderwidth=5, command=button_eq)
+button_clear = Button(root, text="Clear", padx=82, pady=20,borderwidth=5, command=button_cl)
 
 
 
