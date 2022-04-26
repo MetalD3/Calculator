@@ -1,25 +1,32 @@
 
 
-
+#importing modules
 import math
 from tkinter import *
+
+
+#Setting up Window
 root = Tk()
 root.title("Calculator")
 
+#Setting up number imput panel
 e= Entry(root, width=35, borderwidth=5, )
 e.grid(row=0, column=0, columnspan=3, padx=5, pady=5)
 
+#DEFINING FUNCTIONS OF THE +, -, *, /, = AND Clear BUTTONS  
 
+#insertion function
 def button_click(number):
     #e.delete(0, END)
     current= e.get()
     e.delete(0, END)
     e.insert(0, str(current) + str(number))
 
-
+#clear
 def button_cl():
     e.delete(0, END)
 
+# + button
 def button_add():
     first_number = e.get()
     global f_num 
@@ -28,6 +35,7 @@ def button_add():
     f_num = int(first_number)
     e.delete(0, END)
 
+# = button
 def button_eq():
     second_number = e.get()
     e.delete(0, END)
@@ -41,7 +49,7 @@ def button_eq():
     elif math == "division":
         e.insert(0, f_num / int(second_number))
 
-
+# - button
 def button_sub():
     first_number = e.get()
     global f_num 
@@ -52,7 +60,7 @@ def button_sub():
 
 
 
-
+# * button
 def button_mult():
     first_number = e.get()
     global f_num 
@@ -62,7 +70,7 @@ def button_mult():
     e.delete(0, END)
 
 
-
+#divide button
 def button_divid():
     first_number = e.get()
     global f_num 
@@ -87,7 +95,7 @@ def button_divid():
 
 
 
-
+#Setting up buttons
 button_1 = Button(root, text="1", padx=40, pady=20, borderwidth=5 ,command=lambda: button_click(1))
 button_2 = Button(root, text="2", padx=44, pady=20,borderwidth=5, command=lambda: button_click(2))
 button_3 = Button(root, text="3", padx=40, pady=20,borderwidth=5, command=lambda: button_click(3))
@@ -100,7 +108,7 @@ button_9 = Button(root, text="9", padx=40, pady=20,borderwidth=5, command=lambda
 button_0 = Button(root, text="0", padx=40, pady=20,borderwidth=5, command=lambda: button_click(0))
 button_plus = Button(root, text="+", padx=39, pady=20,borderwidth=5, command=button_add)
 button_minus = Button(root, text="-", padx=41, pady=20,borderwidth=5, command=button_sub)
-button_mul = Button(root, text="*", padx=40, pady=20,borderwidth=5, command=button_mult)
+button_mul = Button(root, text="x", padx=40, pady=20,borderwidth=5, command=button_mult)
 button_div = Button(root, text="/", padx=45, pady=20,borderwidth=5, command=button_divid)
 
 button_equal = Button(root, text="=", padx=91, pady=20,borderwidth=5, command=button_eq)
@@ -109,7 +117,7 @@ button_clear = Button(root, text="Clear", padx=82, pady=20,borderwidth=5, comman
 
 
 
-
+#placing buttons
 button_1.grid(row=3, column=0)
 button_2.grid(row=3, column=1)
 button_3.grid(row=3, column=2)
